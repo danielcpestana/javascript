@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Países</h1>
+    Qual é o seu País? <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Confirme" onclick="Clicar()">
+    <div id="res"></div>
+    <script>
+        function Clicar(){
+            var txt = document.getElementById('txtp').value
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Seu País é do(a) ${txt}</p>`
+            
+            if (txt == 'Brasil'){
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            } else{
+                res.innerHTML += `<p>Você é <strong>estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
