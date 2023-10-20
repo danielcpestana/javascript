@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando estilos</title>
+    <style>
+        .fonte-grande{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulando Estilos</h1>
+
+    <button onclick="alterarCorDeFundoPrimeiroPost()">Alterar Cor de Fundo do Primeiro Post</button>
+
+    <button onclick="alterarTamanhoSegundoPost()">Alterar Tamanho do Segundo Post</button>
+
+    <article class="post">
+        <p><strong>Daniel Pestana</strong> <span>@danaborni - 10min</span></p>
+        <p class="texto-post">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, ea unde! Laborum neque, fuga cumque nisi error sint, nesciunt placeat distinctio incidunt corrupti ipsum porro, omnis similique soluta reiciendis dicta.
+        </p>
+        <br>
+    </article>
+
+    <article class="post">
+        <p><strong>Daniel Pestana</strong> <span>@danaborni - 10min</span></p>
+        <p class="texto-post">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, ea unde! Laborum neque, fuga cumque nisi error sint, nesciunt placeat distinctio incidunt corrupti ipsum porro, omnis similique soluta reiciendis dicta.
+        </p>
+        <br>
+    </article>
+
+    <h2>Manipulando atributos</h2>
+
+    
+    <button onclick="marcarRadio('F')">Marcar radio feminino</button>
+
+    <button onclick="marcarRadio('M')">Marcar radio masculino</button>
+
+    <br><br>
+
+    Masculino <input type="radio" name="genero" id="genero-masculino">
+    
+    Feminino <input type="radio" name="genero" id="genero-feminino">
+
+    <script src="index.js"></script>
+</body>
+</html>
